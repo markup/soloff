@@ -16,10 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: transparent;
   text-indent: -100000px;
-  width: 20em;
-  height: 8.444em;
+  width: 53.778em;
+  height: 11.222em;
   margin: 0 auto;
-  background: url("../img/SoloffLogotype.png") no-repeat top center; }
+  background: url("../img/masthead.png") no-repeat top center; }
 
 h2 {
   font-size: 3.556em;
@@ -87,32 +87,37 @@ ul {
       background: url("../img/shops_pic.jpg") no-repeat top left; }
 
 header {
-  height: 5.166em;
-  padding-top: 9.556em;
-  margin-bottom: 4.444em;
-  background: url("../img/masthead.jpg") no-repeat top center;
-  box-shadow: 0 0 14px #909090;
+  font-size: 1em;
+  padding-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
   position: relative; }
   header .meta {
     width: 53.333em;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1; }
   header p {
-    font-size: 0.611em;
+    font-size: 0.667em;
     text-transform: uppercase;
-    margin-top: -3.75em;
-    width: 26.909em;
-    color: #6a6a6a; }
+    padding-top: 1em;
+    color: #6a6a6a;
+    margin-top: 1em;
+    margin-bottom: 0; }
     header p i {
       text-transform: lowercase;
       font-style: italic; }
     header p[data="location"] {
+      text-align: left;
       float: left;
-      letter-spacing: 1px; }
-    header p[data="contact_info"] {
-      float: left; }
+      letter-spacing: 1px;
+      width: 26.667em; }
     header p[data="licenses"] {
-      float: right; }
+      text-align: right;
+      float: right;
+      width: 26.667em; }
+    header p[data="contact_info"] {
+      text-transform: none; }
 
 #main {
   width: 52em;
