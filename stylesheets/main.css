@@ -131,7 +131,7 @@ header {
     color: #6a6a6a;
     margin-top: 1em;
     margin-bottom: 0; }
-    header p i {
+    header p .fancy {
       text-transform: lowercase;
       font-style: italic; }
     header p[data="location"] {
@@ -300,7 +300,7 @@ section {
   font-style: italic; }
 #memberships img {
   float: right;
-  margin-top: 1em; }
+  clear: none; }
 #memberships ul {
   width: 100%;
   margin: 1.5em auto 0; }
