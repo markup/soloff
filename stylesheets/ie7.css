@@ -1,6 +1,9 @@
 body ul li[data="management"] {
   width: 31.8%; }
 
+#memberships img {
+  margin-top: -70px; }
+
 footer {
   height: 29px;
   padding-top: 14px;
