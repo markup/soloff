@@ -11,20 +11,28 @@
     <![endif]-->
 
     <script type="text/javascript">
-      function preload(images) {
-        // This function preloads images.
-        if (document.images) {
-          var imageArray = new Array();
-          imageArray = images.split(',');
-          var imageObj = new Image();
-          for(i=0; i<=imageArray.length-1; i++) {
-            // document.write('<img src="' + imageArray[i] + '" />');// Write to page (uncomment to check images)
-            imageObj.src=imageArray[i];
-            console.debug(imageArray[i]);
+      <!--//--><![CDATA[//><!--
+        var images = new Array()
+        function preload() {
+          for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
           }
-          console.debug("Done!");
         }
-      }
+        preload(
+          "img/homedepot_pic.jpg",
+          "img/walgreens_pic.jpg",
+          "img/shops_pic.jpg",
+          "img/logo_cvs_color.png",
+          "img/logo_ingles_color.png",
+          "img/logo_familydollar_color.png",
+          "img/logo_dollargeneral_color.png",
+          "img/logo_lowes_color.png",
+          "img/logo_pizzahut_color.png",
+          "img/logo_steaknshake_color.png",
+          "img/logo_mcdonalds_color.png"
+        )
+      //--><!]]>
     </script>
   </head>
   <body>
@@ -138,9 +146,5 @@
         </p>
       </footer>
     </div>
-    <script type="text/javascript">
-      // Preload images for hover effect once document is loaded.
-      preload('img/homedepot_pic.jpg,img/walgreens_pic.jpg,img/shops_pic.jpg,img/logo_cvs_color.png,img/logo_ingles_color.png,img/logo_familydollar_color.png,img/logo_dollargeneral_color.png,img/logo_lowes_color.png,img/logo_pizzahut_color.png,img/logo_steaknshake_color.png,img/logo_mcdonalds_color.png');
-    </script>
   </body>
 </html>
