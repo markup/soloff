@@ -1,4 +1,4 @@
-soloff
+[SoloffProperties.com](http://soloffproperties.com)
 ======
 
-Soloff Properties
+Source for commercial real estate company Soloff Properties, based in Chattanooga, TN.
