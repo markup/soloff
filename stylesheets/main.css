@@ -77,9 +77,23 @@ ul {
       -moz-transition-delay: 0s;
       -o-transition-delay: 0s;
       transition-delay: 0s; }
+      ul li[data="brokerage"]:hover h4, ul li[data="consulting"]:hover h4, ul li[data="management"]:hover h4 {
+        color: #c1272d; }
     ul li[data="brokerage"] h4, ul li[data="consulting"] h4, ul li[data="management"] h4 {
       text-align: left;
-      color: #c1272d; }
+      color: #971e23;
+      -webkit-transition-property: color;
+      -moz-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-delay: 0.15s;
+      -moz-transition-delay: 0.15s;
+      -o-transition-delay: 0.15s;
+      transition-delay: 0.15s; }
     ul li[data="brokerage"] ul, ul li[data="consulting"] ul, ul li[data="management"] ul {
       list-style: square outside;
       margin: 0.5em 0 0 1.25em; }
@@ -130,7 +144,10 @@ header {
       float: right;
       width: 26.667em; }
     header p[data="contact_info"] {
-      text-transform: none; }
+      text-transform: none;
+      color: #373737;
+      font-size: 0.75em;
+      line-height: 0.5em; }
 
 #main {
   width: 52em;
@@ -192,7 +209,7 @@ section {
     background: url("../img/logo_pizzahut_grey.png") no-repeat top center;
     margin-right: 20px;
     margin-top: 10px; }
-  #clients ul li[data="factoryconnection"] {
+  #clients ul li[data="mcdonalds"] {
     color: #909090;
     text-indent: 0;
     padding-top: 15px;
@@ -226,7 +243,7 @@ section {
     background: url("../img/logo_lowes_color.png") no-repeat top center; }
   #clients:hover ul li[data="pizzahut"] {
     background: url("../img/logo_pizzahut_color.png") no-repeat top center; }
-  #clients:hover ul li[data="factoryconnection"] {
+  #clients:hover ul li[data="mcdonalds"] {
     color: #6a6a6a; }
   #clients:hover ul li[data="steaknshake"] {
     background: url("../img/logo_steaknshake_color.png") no-repeat top center; }

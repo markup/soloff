@@ -64,9 +64,14 @@ ul
     &:hover
       @include transition-duration(0.25s)
       @include transition-delay(0s)
+      h4
+        color: $red
     h4
       text-align: left
-      color: $red
+      color: darken($red, 10%)
+      @include transition-property(color)
+      @include transition-duration(1s)
+      @include transition-delay(0.15s)
     ul
       list-style: square outside
       margin: 0.5em 0 0 1.25em
@@ -118,6 +123,9 @@ header
       width: 26.667em
     &[data="contact_info"]
       text-transform: none
+      color: darken($grey, 35%)
+      font-size: 0.75em
+      line-height: 0.5em
 
 #main
   width: 52em
@@ -171,8 +179,8 @@ section
         background: url("../img/logo_pizzahut_grey.png") no-repeat top center
         margin-right: 20px
         margin-top: 10px
-      &[data="factoryconnection"]
-        //background: url("../img/logo_factoryconnection_grey.png") no-repeat top center
+      &[data="mcdonalds"]
+        //background: url("../img/logo_mcdonalds_grey.png") no-repeat top center
         color: $grey
         text-indent: 0
         padding-top: 15px
@@ -202,8 +210,8 @@ section
           background: url("../img/logo_lowes_color.png") no-repeat top center
         &[data="pizzahut"]
           background: url("../img/logo_pizzahut_color.png") no-repeat top center
-        &[data="factoryconnection"]
-          //background: url("../img/logo_factoryconnection_color.png") no-repeat top center
+        &[data="mcdonalds"]
+          //background: url("../img/logo_mcdonalds_color.png") no-repeat top center
           color: darken($grey, 15%)
         &[data="steaknshake"]
           background: url("../img/logo_steaknshake_color.png") no-repeat top center
