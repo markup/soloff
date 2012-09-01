@@ -59,7 +59,11 @@ ul
     background: url("../img/greybox.jpg") no-repeat top left
     padding-top: 9.5em
     @include transition-property(background)
-    @include transition-duration(0.25s)
+    @include transition-duration(1s)
+    @include transition-delay(0.15s)
+    &:hover
+      @include transition-duration(0.25s)
+      @include transition-delay(0s)
     h4
       text-align: left
       color: $red
@@ -138,8 +142,9 @@ section
       color: transparent
       text-indent: -100000px
       overflow: hidden
-      @include transition-property(background)
-      @include transition-duration(0.25s)
+      @include transition-property(background,color)
+      @include transition-duration(1s)
+      @include transition-delay(0.15s)
       &:hover
         cursor: default
       &[data="ingles"]
@@ -183,6 +188,8 @@ section
   &:hover
     ul
       li
+        @include transition-duration(0.25s)
+        @include transition-delay(0s)
         &[data="ingles"]
           background: url("../img/logo_ingles_color.png") no-repeat top center
         &[data="cvs"]

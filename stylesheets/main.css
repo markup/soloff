@@ -56,14 +56,27 @@ ul {
     float: left;
     background: url("../img/greybox.jpg") no-repeat top left;
     padding-top: 9.5em;
-    -moz-transition-property: background;
     -webkit-transition-property: background;
+    -moz-transition-property: background;
     -o-transition-property: background;
     transition-property: background;
-    -moz-transition-duration: 0.25s;
-    -webkit-transition-duration: 0.25s;
-    -o-transition-duration: 0.25s;
-    transition-duration: 0.25s; }
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-delay: 0.15s;
+    -moz-transition-delay: 0.15s;
+    -o-transition-delay: 0.15s;
+    transition-delay: 0.15s; }
+    ul li[data="brokerage"]:hover, ul li[data="consulting"]:hover, ul li[data="management"]:hover {
+      -webkit-transition-duration: 0.25s;
+      -moz-transition-duration: 0.25s;
+      -o-transition-duration: 0.25s;
+      transition-duration: 0.25s;
+      -webkit-transition-delay: 0s;
+      -moz-transition-delay: 0s;
+      -o-transition-delay: 0s;
+      transition-delay: 0s; }
     ul li[data="brokerage"] h4, ul li[data="consulting"] h4, ul li[data="management"] h4 {
       text-align: left;
       color: #c1272d; }
@@ -141,14 +154,18 @@ section {
   color: transparent;
   text-indent: -100000px;
   overflow: hidden;
-  -moz-transition-property: background;
-  -webkit-transition-property: background;
-  -o-transition-property: background;
-  transition-property: background;
-  -moz-transition-duration: 0.25s;
-  -webkit-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s; }
+  -webkit-transition-property: background, color;
+  -moz-transition-property: background, color;
+  -o-transition-property: background, color;
+  transition-property: background, color;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 0.15s;
+  -moz-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  transition-delay: 0.15s; }
   #clients ul li:hover {
     cursor: default; }
   #clients ul li[data="ingles"] {
@@ -188,22 +205,31 @@ section {
     background: url("../img/logo_steaknshake_grey.png") no-repeat top center;
     width: 100px;
     height: 80px; }
-#clients:hover ul li[data="ingles"] {
-  background: url("../img/logo_ingles_color.png") no-repeat top center; }
-#clients:hover ul li[data="cvs"] {
-  background: url("../img/logo_cvs_color.png") no-repeat top center; }
-#clients:hover ul li[data="familydollar"] {
-  background: url("../img/logo_familydollar_color.png") no-repeat top center; }
-#clients:hover ul li[data="dollargeneral"] {
-  background: url("../img/logo_dollargeneral_color.png") no-repeat top center; }
-#clients:hover ul li[data="lowes"] {
-  background: url("../img/logo_lowes_color.png") no-repeat top center; }
-#clients:hover ul li[data="pizzahut"] {
-  background: url("../img/logo_pizzahut_color.png") no-repeat top center; }
-#clients:hover ul li[data="factoryconnection"] {
-  color: #6a6a6a; }
-#clients:hover ul li[data="steaknshake"] {
-  background: url("../img/logo_steaknshake_color.png") no-repeat top center; }
+#clients:hover ul li {
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s; }
+  #clients:hover ul li[data="ingles"] {
+    background: url("../img/logo_ingles_color.png") no-repeat top center; }
+  #clients:hover ul li[data="cvs"] {
+    background: url("../img/logo_cvs_color.png") no-repeat top center; }
+  #clients:hover ul li[data="familydollar"] {
+    background: url("../img/logo_familydollar_color.png") no-repeat top center; }
+  #clients:hover ul li[data="dollargeneral"] {
+    background: url("../img/logo_dollargeneral_color.png") no-repeat top center; }
+  #clients:hover ul li[data="lowes"] {
+    background: url("../img/logo_lowes_color.png") no-repeat top center; }
+  #clients:hover ul li[data="pizzahut"] {
+    background: url("../img/logo_pizzahut_color.png") no-repeat top center; }
+  #clients:hover ul li[data="factoryconnection"] {
+    color: #6a6a6a; }
+  #clients:hover ul li[data="steaknshake"] {
+    background: url("../img/logo_steaknshake_color.png") no-repeat top center; }
 
 #portrait {
   overflow: hidden;
