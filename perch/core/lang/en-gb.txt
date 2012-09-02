@@ -330,5 +330,7 @@
 	"These are all the editable regions that are shared across many pages of the site.":"These are all the editable regions that are shared across many pages of the site.",
 	"Item orders successfully updated.":"Item orders successfully updated.",
 	"Editor":"Editor",
-	"Hide regions you can't edit":"Hide regions you can't edit"
+	"Hide regions you can't edit":"Hide regions you can't edit",
+	"Sorry, there's currently no content available based on that filter":"Sorry, there's currently no content available based on that filter",
+	"View all":"View all"
 }

@@ -1,3 +1,4 @@
+<?php include('perch/runtime.php'); ?>
 <!doctype html>
 <html>
   <head>
@@ -54,50 +55,31 @@
       <div class="meta">
         <p data="location">Based <span class="fancy">in</span> Chattanooga, TN</p>
         <p data="licenses">Licensed <span class="fancy">in</span> Tennessee + Georgia</p>
-        <p data="contact_info">423-267-2675 // <a href="mailto:beth@soloffproperties.com">beth@soloffproperties.com</a></p>
+        <p data="contact_info"><?php perch_content('Phone Number'); ?> // <a href="mailto:<?php perch_content('Email Address'); ?>"><?php perch_content('Email Address'); ?></a></p>
       </div>
     </header>
     <div id="main">
       <hr>
       <section id="services">
         <hgroup>
-          <h2>Commercial Real Estate Services</h2>
-          <h3>Professionals with first-hand experience in Commercial Real Estate</h3>
+          <h2><?php perch_content('Main Heading'); ?></h2>
+          <h3><?php perch_content('Sub-Heading'); ?></h3>
         </hgroup>
         <ul>
           <li data="brokerage">
-            <h4>Brokerage.</h4>
-            <ul>
-              <li>Site Selection</li>
-              <li>Leasing: Retail <i>or</i> Office</li>
-              <li>Sales</li>
-              <li>Investment Properties</li>
-            </ul>
+            <?php perch_content('Brokerage List'); ?>
           </li>
           <li data="consulting">
-            <h4>Consulting.</h4>
-            <ul>
-              <li>Market &amp; Project Analysis</li>
-              <li>Acquisition of Investment Properties</li>
-              <li>Development &amp; Construction Management</li>
-              <li>Property Disposition</li>
-              <li>Contract Negotiations</li>
-            </ul>
+            <?php perch_content('Consulting List'); ?>
           </li>
           <li data="management">
-            <h4>Property Management.</h4>
-            <ul>
-              <li>Retail or Office Facilities</li>
-              <li>Investment Properties managed from an owner&rsquo;s perspective</li>
-              <li>Customized Solutions, Accounting and Budgeting Services</li>
-              <li>On-Call Full Facility Maintenance Services</li>
-            </ul>
+            <?php perch_content('Property Management List'); ?>
           </li>
         </ul>
       </section>
       <hr>
       <section id="clients">
-        <h4>You may know some of the folks we&rsquo;ve worked with&hellip;</h4>
+        <h4><?php perch_content('Client List Heading'); ?></h4>
         <ul>
           <li data="ingles">Ingles Markets</li>
           <li data="cvs">CVS</li>
@@ -118,12 +100,7 @@
           </p>
         </div>
         <div id="bio">
-          <p>
-            <strong class="red">Soloff</strong> offers consistent solutions &amp; results <br>for your business goals. We believe in <br>face to face relationships and that <br>hands-on problem solving is fundamental.
-          </p>
-          <p>
-            <strong>Results are in the details <br>and we take care of the details.</strong>
-          </p>
+          <?php perch_content('About Text'); ?>
         </div>
         <div id="downloads">
           <p>
