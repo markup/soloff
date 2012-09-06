@@ -332,5 +332,6 @@
 	"Editor":"Editor",
 	"Hide regions you can't edit":"Hide regions you can't edit",
 	"Sorry, there's currently no content available based on that filter":"Sorry, there's currently no content available based on that filter",
-	"View all":"View all"
+	"View all":"View all",
+	"There was nothing to undo.":"There was nothing to undo."
 }
