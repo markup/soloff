@@ -272,13 +272,13 @@ section {
     margin: 0 0 0.75em;
     font-size: 1.556em;
     font-style: italic; }
-    #bio p strong {
+    #bio p strong, #bio p b {
       font-weight: normal;
       font-style: normal;
       color: #444444; }
-      #bio p strong.red {
-        font-style: italic;
-        color: #c1272d; }
+    #bio p em, #bio p i {
+      font-style: italic;
+      color: #c1272d; }
 
 #downloads {
   width: auto;

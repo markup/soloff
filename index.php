@@ -94,17 +94,15 @@
       <hr>
       <section id="about">
         <div id="portrait">
-          <img src="img/BethSoloff_portrait.jpg" alt="Portrait of Beth Soloff, President of Soloff Properties, Inc.">
-          <p>
-            Beth Soloff <br><i>President</i>
-          </p>
+          <!-- <img src="img/BethSoloff_portrait.jpg" alt="Portrait of Beth Soloff, President of Soloff Properties, Inc."> -->
+          <?php perch_content('Portrait'); ?>
         </div>
         <div id="bio">
           <?php perch_content('About Text'); ?>
         </div>
         <div id="downloads">
           <p>
-            Download: <a href="downloads/Soloff_Properties_info.pdf" title="Download Resume">Company Information</a> <em>(Adobe Reader is required.)</em>
+            Download: <?php perch_content('Resume PDF'); ?> <em>(Adobe Reader is required.)</em>
           </p>
         </div>
       </section>
